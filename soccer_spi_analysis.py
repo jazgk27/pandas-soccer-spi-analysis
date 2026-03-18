@@ -15,7 +15,7 @@ def main():
     data_frame['def'] = data_frame['def'].replace(0.9, 1.0) #11.
     print(data_frame.head())
     with open('soccer.txt', 'w') as file: #12. new file
-        file.write("Maximum value of def: {}\n".format(data_frame['def'].max())) #13. max balue of def question 8
+        file.write("Maximum value of def: {}\n".format(data_frame['def'].max())) #13. max value of def question 8
         file.write("Minimum value of off: {}".format(data_frame['off'].min()))   #14. min value of off question 9
     with open('soccer.txt', 'r') as file: #15. txt in read mode
         print(file.read()) #16.
